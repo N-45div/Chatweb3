@@ -1,2 +1,8 @@
 import GUN from 'gun';
-import 'gun'
+import 'gun/sea';
+import 'gun/axe';
+
+
+export const db = GUN();
+
+export const user = db.user().recall({sessionStorage:true})
